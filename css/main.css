@@ -120,7 +120,6 @@ header nav ul li a {
 .section-two,
 .section-three {
 	box-sizing: border-box;
-	padding: 0 40px;
 }
 
 .section-one {
@@ -166,6 +165,58 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: .875rem;
+}
+
+@media all and (min-width: 768px) {
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+
+	.section-one {
+		width: 30%;
+	}
+	
+	.section-two {
+		width: 36%;
+		border-right: 5px solid #EEE;
+		border-left: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+		padding: 0 30px;
+	}
+	
+	.section-three {
+		width: 30%;
+		padding-left: 5px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+		body {
+			font-size: 1em;
+		}
+
+		.content-wrapper {
+			justify-content: left;
+			align-items: center;
+			padding:0;
+		}
+
+		header h1 {
+			padding: 0;
+			width: 79%;
+			border-bottom: none;
+			text-align: left;
+		}
+		
+		header nav {
+			width: 21%;
+		}
+		
+		header nav ul {
+			display: flex;
+			justify-content: space-between;
+		}
 }
 
 /* h1 font-size: 30px;
